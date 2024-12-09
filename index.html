@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Salvar em TXT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Seu CSS personalizado -->
+</head>
+<body>
+    <main class="container-fluid d-flex flex-column vh-100">
+        <div class="row flex-grow-1">
+            <!-- Painel Esquerdo -->
+            <section class="col-md-6 d-flex flex-column justify-content-center align-items-center bg-purple text-white">
+                <h1>Bem-vindo(a)</h1>
+                <p>Gerencie suas finanças com facilidade e segurança.</p>
+            </section>
+
+            <!-- Formulário de Login -->
+            <section class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="login-box p-4 border rounded shadow text-center">
+                    <!-- Logo -->
+                    <div class="mb-4">
+                        <img src="img/logo.jpg" alt="Logo Nubank" class="img-fluid" style="max-width: 150px;">
+                    </div>
+                    <!-- Formulário -->
+                    <form action="login.php" method="POST">
+                        <h2 class="text-center mb-4">Faça login</h2>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+                        </div>
+                        <button type="submit" class="btn btn-purple btn-block">Entrar</button>
+                        <a href="#" class="d-block text-center mt-2">Esqueceu a senha?</a>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
